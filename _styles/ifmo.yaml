@@ -1,7 +1,22 @@
+# used https://books.ifmo.ru/file/pdf/2622.pdf as reference
 pageSetup:
     size: A4
+    margin-top: 2cm
+    margin-bottom: 2cm
+    margin-left: 3cm
+    margin-right: 1.5cm
+fontsAlias:
+    fontSerif: FreeSerif
+    fontSerifBold: FreeSerifBold
+    fontSerifItalic: FreeSerifItalic
+    fontSerifBoldItalic: FreeSerifBoldItalic
+    fontSans: FreeSans
+    fontSansBold: FreeSansBold
+    fontSansItalic: FreeSansOblique
+    fontSansBoldItalic: FreeSansBoldOblique
+    fontMono: FreeMono
 styles:
     centre:
         alignment: center
-    rus:
-        fontName: freeserif
+    ifmo-report-info:
+        borderWidth: 0
