@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+STYLESHEETS="${STYLESHEETS:-_styles/ifmo-common.yaml}"
+
 join_by()
 {
   local delim=$1
@@ -20,11 +22,8 @@ require_command()
 
 require_command rst2pdf
 
-STYLESHEETS=$(ls ./_styles/*.yaml)
-FONTS_DIRS=/usr/share/fonts
-
 rst2pdf -ve preprocess \
   --stylesheets=$(join_by , $STYLESHEETS) \
-  --font-path=$(join_by : $FONTS_DIRS) \
-  --custom-cover=_templates/"${1%%.rst}.tmpl" \
+  --custom-cover=${TEMPLATE} \
+  -o "./results/${1/.rst/.pdf}" \
   $1

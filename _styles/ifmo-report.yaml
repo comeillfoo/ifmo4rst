@@ -1,0 +1,8 @@
+styles:
+    ifmo-cover-table:
+        firstLineIndent: 0
+        leftIndent: 0
+        commands:
+            - [ TOPPADDING, [ 0, 1 ], [ -1, 1 ], 64 ]
+            - [ TOPPADDING, [ 0, 2 ], [ -1, -1 ], 16 ]
+        colWidths: [ 7.5cm, null ]

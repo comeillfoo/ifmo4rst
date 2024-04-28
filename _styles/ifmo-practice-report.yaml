@@ -1,0 +1,42 @@
+# used https://books.ifmo.ru/file/pdf/2622.pdf as reference
+styles:
+  ifmo-cover-table-1:
+    colWidths: [ 6.5cm, null ]
+    firstLineIndent: 0
+  ifmo-cover-table-2:
+    firstLineIndent: 0
+    spaceBefore: 0
+    spaceAfter: 0
+    colWidths: [ null, 2.8cm, 2.7cm ]
+    commands:
+      - [ RIGHTPADDING, [ 0, 0 ], [ -1, -1 ], 0 ]
+      - [ LEFTPADDING, [ 0, 0 ], [ -1, -1 ], 0 ]
+      - [ LINEBELOW, [ 1, 0 ], [ 1, 0 ], 0.25, 'black' ]
+      - [ LINEBELOW, [ 1, 2 ], [ 1, 2 ], 0.25, 'black' ]
+      - [ LINEBELOW, [ 1, 4 ], [ 1, 4 ], 0.25, 'black' ]
+      # - [ INNERGRID, [ 0, 0 ], [ -1, -1 ], 0.25, 'red' ]
+  ifmo-cover-title:
+    alignment: center
+  ifmo-cover-title-1:
+    parent: ifmo-cover-title
+    fontSize: 9.5
+  ifmo-cover-title-2:
+    parent: ifmo-cover-title
+    fontSize: 7
+  ifmo-cover-title-3-4-5:
+    parent: ifmo-cover-title
+    fontSize: 10
+  ifmo-cover-title-6:
+    fontSize: 11
+    spaceBefore: 10
+    leftIndent: 22
+  ifmo-cover-title-7:
+    parent: ifmo-cover-title
+    fontSize: 16
+  ifmo-cover-title-rest-1:
+    spaceAfter: 12
+    fontSize: 11
+  ifmo-cover-title-rest-2:
+    fontSize: 11
+  ifmo-cover-sign:
+    fontSize: 7
