@@ -5,6 +5,7 @@ pageSetup:
     margin-bottom: 2cm
     margin-left: 3cm
     margin-right: 1.5cm
+    firstTemplate: coverPage
 fontsAlias:
     fontSerif: FreeSerif
     fontSerifBold: FreeSerifBold
@@ -15,8 +16,28 @@ fontsAlias:
     fontSansItalic: FreeSansOblique
     fontSansBoldItalic: FreeSansBoldOblique
     fontMono: FreeMono
+pageTemplates:
+    mainPage:
+        showFooter: true
+        defaultFooter: |
+            .. class:: right
+
+            ###Page###
+
+    coverPage:
+        showFooter: false
 styles:
+    base:
+        fontName: fontSerif
+        fontSize: 12
+    normal:
+        firstLineIndent: 35
     centre:
         alignment: center
-    ifmo-report-info:
-        borderWidth: 0
+    ifmo-cover-table:
+        firstLineIndent: 0
+        leftIndent: 0
+        commands:
+            - [ TOPPADDING, [ 0, 1 ], [ -1, 1 ], 64 ]
+            - [ TOPPADDING, [ 0, 2 ], [ -1, -1 ], 16 ]
+        colWidths: [ 7.5cm, null ]
